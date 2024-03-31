@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <h1>PORTFOLIO</h1>
+        </div>
+
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index1.html">ABOUT</a></li>
+            <li><a href="index2.html">SKILLS</a></li>
+            <li><a href="index3.html">SERVICES</a></li>
+            <li><a href="index4.html">PROJECTS</a></li>
+            
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="skills">
+            <h1>MY SKILLS</h1><br>
+            <p> My skill set includes proficiency in HTML, CSS, and JavaScript, along
+                with expertise in popular frontend frameworks like React. I thrive on collaborating with designers 
+                and backend developers to deliver seamless, responsive web applications that delight users and exceed 
+                client expectations.I'm excited about the endless possibilities of frontend development and 
+                am always eager to learn and explore new technologies to enhance user experiences.</p>
+        </div>
+        <div id="skills2">
+            <html>
+                <head>
+                <link rel="stylesheet" type="text/css" href="skill_bar_style.css">
+                <script type="text/javascript" src="jquery.js"></script>
+                <script type="text/javascript">
+                $(document).ready(function(){
+                     
+                $("#skillbar_html").animate({width:'85%'},1500);
+                     
+                $("#skillbar_css").animate({width:'80%'},1500);
+                     
+                $("#skillbar_javascript").animate({width:'80%'},1500);
+                
+                $("#skillbar_php").animate({width:'70%'},1500);
+                $("#skillbar_asp").animate({width:'65%'},1500);
+                $("#skillbar_jsp").animate({width:'75%'},1500);
+                
+                });
+                </script>
+                </head>
+                <body>
+                <div id="wrapper">
+
+                    <div class="skill_name" id="skill_html">HTML</div>
+                    <div class="skillbar_wrapper">
+                     <div class="skillbar_bar" id="skillbar_html"></div>
+                     <div class="skill_bar_percent">85%</div>
+                </div>
+
+                <div class="skill_name" id="skill_css">CSS</div>
+                <div class="skillbar_wrapper">
+                 <div class="skillbar_bar" id="skillbar_css"></div>
+                 <div class="skill_bar_percent">80%</div>
+                </div>
+
+                <div class="skill_name" id="skill_javascript">JS</div>
+                <div class="skillbar_wrapper">
+                 <div class="skillbar_bar" id="skillbar_javascript"></div>
+                 <div class="skill_bar_percent">80%</div>
+                </div>
+                
+                <div class="skill_name" id="skill_php">PHP</div>
+                <div class="skillbar_wrapper">
+                 <div class="skillbar_bar" id="skillbar_php"></div>
+                 <div class="skill_bar_percent">70%</div>
+                </div>
+                
+                <div class="skill_name" id="skill_asp">ASP</div>
+                <div class="skillbar_wrapper">
+                 <div class="skillbar_bar" id="skillbar_asp"></div>
+                 <div class="skill_bar_percent">65%</div>
+                </div>
+                
+                <div class="skill_name" id="skill_jsp">JSP</div>
+                <div class="skillbar_wrapper">
+                 <div class="skillbar_bar" id="skillbar_jsp"></div>
+                 <div class="skill_bar_percent">75%</div>
+                </div>
+                
+                
+
+                </div>
+                </body>
+                </html>
+             
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var t1=gsap.timeline({
+    defaults:{
+        opacity:0,
+        ease:"linear",
+        duration:1,
+    }
+})
+
+t1.fromTo("nav",{height:150},{opacity:1,height:110});
+t1.fromTo("#skills h1",{x:0},{opacity:1,x:-1});
+t1.fromTo("#skills p",{x:0},{opacity:1,x:-1});
+    </script>
+
+</body>
+</html>

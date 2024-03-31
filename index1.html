@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <h1>PORTFOLIO</h1>
+        </div>
+
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index1.html">ABOUT</a></li>
+            <li><a href="index2.html">SKILLS</a></li>
+            <li><a href="index3.html">SERVICES</a></li>
+            <li><a href="index4.html">PROJECTS</a></li>
+        </ul>
+    </nav>
+    
+    <div id="main">
+    
+        <img src="portofolio.jpeg" alt="" id="img1">
+            
+    
+
+    <div id="about">
+
+        <h1>I'm <span>Kotte Chandrika</span></h1>
+        <p> "Hello, I'm chandrika , a frontend developer passionate about crafting immersive digital experience
+             in web development, I specialize in bringing designs to life through clean, efficient code and 
+             intuitive user interfaces. My skill set includes proficiency in HTML, CSS, and JavaScript, along
+              with expertise in popular frontend frameworks like React. I thrive on collaborating with designers 
+              and backend developers to deliver seamless, responsive web applications that delight users and exceed 
+              client expectations.I'm excited about the endless possibilities of frontend development and 
+              am always eager to learn and explore new technologies to enhance user experiences.And also familiar with
+              Development Languages like
+C,Python,Data analytics,Cyber security."</p>
+            <br><br>
+        <p>Contact on</p>
+        <img src="maillogo.jpg" alt="gmail" width="30px" height="30px">
+        <img src="githublogo.jpg" alt="github" width="30px" height="30px" style="border-radius: 30%;">
+        <img src="telegramlogo.jpg" alt="twitter" width="30px" height="30px" style="border-radius: 30%;">
+        
+    </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    var t1=gsap.timeline({
+    defaults:{
+        opacity:0,
+        ease:"linear",
+        duration:1,
+    }
+})
+
+t1.fromTo("nav",{height:150},{opacity:1,height:110});
+t1.fromTo("#photo",{x:20},{opacity:1,x:0});
+t1.fromTo("#about",{x:100},{opacity:1,x:0})
+</script>
+
+</body>
+</html>

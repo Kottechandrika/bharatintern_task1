@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo-container">
+            <h1>PORTFOLIO</h1>
+        </div>
+
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index1.html">ABOUT</a></li>
+            <li><a href="index2.html">SKILLS</a></li>
+            <li><a href="index3.html">SERVICES</a></li>
+            <li><a href="index4.html">PROJECTS</a></li>
+           
+        </ul>
+</nav>
+    
+    <div id="main">
+        <div id="div1">
+            <h1>Mobile App Development</h1>
+            <p>Familiarity with app development frameworks can streamline the development process. For example, iOS developers may use Apple's UIKit or SwiftUI, while Android developers might use Android SDK or Jetpack</p>
+        </div>
+        <div id="div2">
+            <h1>UI/UX Design</h1>
+            <p>Understanding user interface (UI) and user experience (UX) principles is crucial for creating intuitive and visually appealing apps. Design skills include wireframing, prototyping, and graphic design.</p>
+        </div>
+        <div id="div3">
+            <h1>Frontend Development</h1>
+            <p>Fundamental markup and styling languages used for structuring and styling app layouts and UI elements.
+                Essential for adding interactivity and dynamic behavior to mobile app interfaces. Proficiency in JavaScript is crucial, including modern frameworks/libraries like React, Angular, or Vue.js.
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var t1=gsap.timeline({
+    defaults:{
+        opacity:0,
+        ease:"linear",
+        duration:1,
+    }
+})
+
+t1.fromTo("nav",{height:150},{opacity:1,height:110});
+t1.fromTo("#div1",{y:10},{opacity:1,y:0}),
+t1.fromTo("#div2",{y:10},{opacity:1,y:0}),
+t1.fromTo("#div3",{y:10},{opacity:1,y:0})
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <h1>PORTFOLIO</h1>
+        </div>
+
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index1.html">ABOUT</a></li>
+            <li><a href="index2.html">SKILLS</a></li>
+            <li><a href="index3.html">SERVICES</a></li>
+            <li><a href="index4.html">PROJECTS</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="main">
+        <h2>INTERNSHIPS/PROJECTS</h2>
+        <div id="box1">
+            <h2>CYBER SECURITY</h2>
+            <hr><hr><hr>
+            <h3>INTERN</h3>
+            <p>Being an intern in Supraja Technologies, learned about the tools used in cyber security in the duration of one month from June-July in Ethical-hacking.</P>
+                
+        </div>
+
+        <div id="box2">
+            <h2>IBM HACKATHON</h2>
+            <hr><hr><hr>
+            <h3>DATA-ANALYTICS</h3>
+            <p>Participated in IBM-HACKATHON 2023, in the domain of Data Analytics.Worked on the huge dataset,to get the clear reports of the dataset.</P>
+                            
+        </div>
+        <div id="box3">
+            <h2>WORKSHOPS</h2>
+            <hr><hr><hr>
+            <h3>AWS,POWER-BI,FIGMA</h3>
+            <p>Attended a one-week workshop on AWS cloud services.
+                Participated in online webinars on the usage of power-bi and figma.
+            </P>             
+        </div>
+
+
+
+        
+
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var t1=gsap.timeline({
+    defaults:{
+        opacity:0,
+        ease:"linear",
+        duration:1,
+    }
+})
+
+t1.fromTo("nav",{height:150},{opacity:1,height:110});
+t1.fromTo("h2",{y:-50},{opacity:1,y:0}),
+t1.fromTo("#box1",{y:10},{opacity:1,y:0}),
+t1.fromTo("#box2",{y:20},{opacity:1,y:0}),
+t1.fromTo("#box3",{y:30},{opacity:1,y:0})
+    </script>
+
+
+</body>
+</html>
